@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --vietnam:'Be Vietnam Pro', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+nav{
+    display: flex;
+    text-decoration: none;
+    gap: 2rem;
+    height: 2.6rem;
+
+}
+
+
+.linka{
+    text-decoration: none;
+    font-size: 1.5rem;
+    gap:4rem;
+    font-family: var(--vietnam);
+  
+   
+
+    
+}
+.linka:hover{
+    border-bottom: 2px solid #8B48BF;
+}
+
+.contacto{
+    background-color:#8B48BF;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 30px;  
+}
+.headerContainer{
+    display: flex;
+    align-items: center;
+    height:4rem;
+}
+.navegacion{
+    align-items: center;
+}
+.contacto:hover{
+    cursor: pointer;
+    background-color: #763ea1;
+    
+}
+
+@media(min-width:768px){
+    .hamburguesa{
+        display: none;
+    }
+    .menuOculto{
+        display: none;
+    }
+}
+@media(max-width:768px){
+    .contactoMobile{
+        display: none;
+    }
+
+    nav{
+        display: none;
+    }
+   
+    .linkLi{
+        list-style: none;
+    }
+    
+        
+    
+   .menuOculto:hover{
+    width: 100%;
+    height: 15rem;
+    background-color: rgba(65, 190, 231, 0.633);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    font-size: 2rem;
+    position: absolute;
+    right: 12rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 10px 10px 6px #4dc4ec52;
+    
+    
+    
+   }
+   .menuDesplegableOculto{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+   }
+   .linkOculto{
+    text-decoration: none;
+    display: flex;
+   }
+   .enlaceOculto{
+    text-decoration: none;
+    display: flex;
+    color: black;
+    font-family: var(--vietnam);
+
+   }
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 12rem;
+}
+
+.img{
+    width: 55%;
+   display: flex;
+   justify-content: flex-end;
+}
+
+.containerInfo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 46.5rem;
+    justify-content: space-evenly;
+
+}
+
+.tituloInfo{
+    font-size: 5rem;
+    text-align: right;
+    font-family:var(--vietnam);
+
+
+}
+
+.parrafoInfo{
+    text-align: right;
+    font-size: 1.5rem;
+    font-family: var(--vietnam);
+    padding-left:3rem;
+
+}
+
+@media(max-width:768px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .img{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgTenis{
+        width: 40rem;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 40rem;
+        padding: 0;
+        width:100vw;
+        align-items: center;
+
+    }
+   
+    .containerInfo{
+        width: 40rem;
+        display: flex;
+        padding: 3rem;        
+    }
+    .tituloInfo{
+        font-size: 4rem;
+        width: 80vw;
+
+
+    }
+    .parrafoInfo{
+        font-size: 2rem;
+        width: 35rem;
+    }
+}
+
+.barraVioleta{
+    background-color: #8B48BF;
+    height: 15rem;
+    color: white;
+    font-family: var(--vietnam);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.columnaVioleta{
+    width: 47rem;
+    padding:1rem; 
+    
+
+}
+.tituloVioleta{
+    font-size: 3.6rem;
+}
+.parrafoVioleta{
+    font-size: 1.6rem;
+}
+@media(max-width:768px){
+    .barraVioleta{
+        display: flex;
+        flex-direction: column;
+        height: 40rem;
+        background-color: rgb(0, 204, 255);
+    }
+    .tituloVioleta{
+        width: 30rem;
+        padding: 0 0 0 2rem;
+
+    }
+    .parrafoVioleta{
+        width: 35rem;
+        padding: 0 0 0 2rem;
+    }
+
+    .columnaVioleta{
+        padding: 0;
+    }
+}
+.tips{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+    
+    
+}
+.cuadro{
+    display: flex;
+    width: 50rem;
+    align-items: flex-start;
+    gap:2rem;
+    height: 13rem;
+
+}
+
+.numero{
+    display: flex;
+    background-color: #8B48BF;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 2rem;
+    font-family: var(--vietnam);
+    font-size: 1.4rem;
+    color: white;
+    padding: 1rem;
+}
+.cajaParrafo{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--vietnam);
+    gap:1rem;
+    padding-top: 1rem;
+
+
+}
+.tituloCaja{
+    font-size: 1.8rem;
+    color: #323851;
+
+}
+.parrafoCaja{
+    font-size: 1.6rem;
+    color: #B3B2B7;
+    text-align: justify;
+
+
+}
+
+
+.bestMonth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    flex-wrap: wrap;
+}
+.bestMonthDeportistas{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+   flex-wrap: wrap;
+   align-items: center;
+    
+}
+
+
+.numeroTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--vietnam);
+}
+.cuadro{
+    display: flex;
+    flex-direction: column;
+}
+.cajaParrafo{
+    margin-top: -3rem;
+    padding-left: 7rem;
+    width: 38rem;
+}
+.numero{
+    width: 3rem;
+    
+}
+.tituloCaja{
+    padding-left: 1rem;
+}
+
+@media(max-width:768px){
+    .cuadro{
+        height: 15rem;
+        align-items: flex-end;
+    }
+    .tips{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        
+    }
+
+    .tituloCaja{
+        padding-left: 0;
+        height: 3.5rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+
+    }
+    .numero{
+        height: 1.5rem;
+        width: 4rem;
+        z-index: 1;
+        position: relative;
+        left: 2rem;
+    }
+    
+    .parrafoCaja{
+        text-align: left;
+        margin-left: -5.5rem;
+        width: 38rem;
+        font-size: 1.5rem;
+        padding-left: 3rem;
+    }
+    .containerTituloCaja{
+        background-color: #8b48bf38;
+        width: 35rem;
+        z-index: 0;
+        padding-left:2rem ;
+    }
+
+}
+
+.tenista{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30rem;
+    height: 30rem;
+    font-family: var(--vietnam);
+    margin-top: 3rem;
+
+
+}
+.bestMonthContainer__titulo{
+    font-size: 3.5rem;
+    font-family: var(--vietnam);
+    color: #242E53;
+
+}
+
+.nombreTenista{
+    font-size: 1.8rem;
+    color:#242E53;
+}
+.parrafoTenista{
+    text-align: center;
+    color:#B3B2B7;
+    font-size: 1.6rem;
+}
+
+.btnMore{
+    width: 14rem;
+    margin-top: 4rem;
+    padding: 1rem 0;
+}
+
+
+.barraPreFooter{
+    display: flex;
+    justify-content: space-around;
+
+}
+@media(max-width:768px){
+    .tenista2{
+        display: none;
+
+    }
+
+    .tenista3{
+        display: none;
+    }
+    .barraPreFooter{
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+    }
+    .columnaPreFot{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .tituloPreFot{
+        display: flex;
+        height: 17rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        
+    }
+   
+    
+}
+.btnGo:hover{
+    background-color: rgb(255, 255, 255);
+    color: #8B48BF;
+}
+
+
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 20rem;
+    align-items:stretch;
+}
+
+
+.btnGo{
+    background-color:#242E53;
+    color: white;
+    box-shadow: 0px 3px 5px 0px #36143d;
+}
+
+
+
+.logoRedes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.redes{
+    width: 20rem;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--vietnam);
+    font-size: 1.5rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    
+}
+
+.linkFot{
+    color: white;
+    text-decoration: none;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30rem;
+    align-items: flex-end;
+}
+form{
+    display: flex;
+    gap:1rem
+    
+}
+
+.btnFot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 2rem 0;
+    font-size: 2rem;
+    width: 10rem;
+    background-color: #8B48BF;
+    border-radius: 30px;
+    color: white;
+    font-family: var(--vietnam);
+}
+.btnFot:hover{
+    background-color: white;
+    color: #8B48BF;
+    cursor: pointer;
+}
+
+.input{
+    border: none;
+    border-radius: 30px;
+    width: 25rem;
+    font-size: 2rem;
+    padding-left:2rem ;
+    font-family: var(--vietnam);
+}
+
+.copyright{
+    font-family: var(--vietnam);
+    font-size: 1.2rem;
+    color: #B3B2B7
+}
+@media(max-width:768px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 60rem;
+
+    }
+    .formDesk{
+        display: none;
+
+    }
+    .footerDesk{
+        display: none;
+    }
+    .formMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .menuColum{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction:row;
+        width: 40rem;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    }
+    .columnMobile{
+        gap: 2rem;
+    }
+
+    .redesMobile{
+        display: flex;
+        margin-top: -8rem;
+        height: 3rem;
+        justify-content: space-evenly;
+
+    }
+    .logoCopyMobile{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+        align-items: center;
+        height: 10rem;
+    }
+    .inputMobile{
+        height: 4rem;
+    }
+    .btnFotMobile{
+        height: 4rem;
+        padding: 0;
+    }
+}
+
+@media(min-width:768px){
+    .footerMobile{
+        display: none;
+    }
+   
+}
+
+@media(max-width:768px){
+    .vMobile{
+       overflow-x: hidden;
+    }
+}
+
+@media(max-width:940px){
+   
+    .tituloInfo{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width:1250px){
+   .btnContacto{
+    margin-top: 1rem;
+   }
+    
+}
+
+.linkFot:hover{
+    text-shadow: 0px 0px 2px  white;
+}
+
+@media(max-width:768px){
+    .barraVioleta:hover{
+        background-color: #9137e6;
+    }
+     
+    .barraVioleta{
+        transition-property: background-color ;
+        transition-duration: 1s;
+        transition-timing-function:ease;
+
+
+    }
+
+}
+.contacto{
+    font-family: var(--vietnam);
+    font-size: 1.5rem;
+}
+
+.btnGo{
+    font-family: var(--vietnam);
+}
